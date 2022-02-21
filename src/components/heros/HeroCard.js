@@ -27,12 +27,12 @@ export const HeroCard = ({
         <p className="card-text">{first_appearance}</p>
       </div>
 
-      <div class="card-body">
+      <div className="card-body">
         <Link to={`/hero/${id}`}>
           More...
         </Link>
       </div>
-      <div class="card-footer text-muted">2 days ago</div>
+      <div className="card-footer text-muted">2 days ago</div>
     </div>
   );
 }
