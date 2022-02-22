@@ -33,7 +33,7 @@ export const HeroScreen = () => {
   const imagePath = `/assets/img-heroes/${id}.jpg`;
 
   return (
-    <div className="row mt-4">
+    <div className="row mt-5">
       <div className="col-6">
         <img
           src={imagePath}
