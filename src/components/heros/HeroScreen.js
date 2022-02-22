@@ -34,11 +34,15 @@ export const HeroScreen = () => {
 
   return (
     <div className="row mt-4">
-      <div className="col-4">
-        <img src={imagePath} alt={superhero} className="img-thumbnail" />
+      <div className="col-6">
+        <img
+          src={imagePath}
+          alt={superhero}
+          className="img-thumbnail animate__animated animate__fadeInLeft animate__slower"
+        />
       </div>
 
-      <div className="col-8">
+      <div className="col-6">
         <h3>{superhero}</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item listItem">
@@ -53,12 +57,9 @@ export const HeroScreen = () => {
         </ul>
 
         <h5 className="mt-3">Character</h5>
-        <p>{ characters }</p>
+        <p>{characters}</p>
 
-        <button
-          className="btn btn-outline-info"
-          onClick={ handleReturn }
-        >
+        <button className="btn btn-outline-info" onClick={handleReturn}>
           Go to Back
         </button>
       </div>
