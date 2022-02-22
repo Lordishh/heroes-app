@@ -42,7 +42,7 @@ export const HeroScreen = () => {
         />
       </div>
 
-      <div className="col-6">
+      <div className="col-6 animate__animated animate__fadeInRight animate__slower">
         <h3>{superhero}</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item listItem">
