@@ -66,8 +66,9 @@ export const SeachScreen = () => {
 
           {
             (q === '')
-                ? <div className="alert alert-info">Find a hero</div>
-                : <div className="alert alert-danger">No results found</div>
+                            ? <div className="alert alert-info"> Find a hero </div>
+                            : ( heroesFiltered.length === 0 )
+                                && <div className="alert alert-danger"> No results: { q } </div>
           }
 
           {heroesFiltered.map((hero) => (

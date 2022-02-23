@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroById } from '../../helpers/getHeroById';
 
-import './HeroScreen.css';
+
 
 export const HeroScreen = () => {
 
