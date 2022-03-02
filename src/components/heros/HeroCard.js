@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
 
+import { heroImages } from '../../helpers/heroImages';
+
 export const HeroCard = ({
   id,
   superhero,
@@ -10,7 +12,7 @@ export const HeroCard = ({
   characters,
 }) => {
 
-  const imagePath = `/assets/img-heroes/${id}.jpg`;
+  const imagePath = heroImages(`./${id}.jpg`);
 
   return (
     <Tilt>

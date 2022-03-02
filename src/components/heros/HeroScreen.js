@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroById } from '../../helpers/getHeroById';
 
+import { heroImages } from "../../helpers/heroImages";
 
 
 export const HeroScreen = () => {
@@ -30,7 +31,9 @@ export const HeroScreen = () => {
     characters
   } = hero;
 
-  const imagePath = `/assets/img-heroes/${id}.jpg`;
+  // const imagePath = `/assets/img-heroes/${id}.jpg`; // Desde public/assets
+
+  const imagePath = heroImages(`./${ id }.jpg`);
 
   return (
     <div className="row mt-5">
